@@ -19,6 +19,7 @@ export default defineConfig({
   site: process.env.SITE_URL || 'https://basecoatui.com',
   server: {
     host: '127.0.0.1',
+    allowedHosts: true
   },
   vite: {
     optimizeDeps: { include: ['chart.js/auto'] },

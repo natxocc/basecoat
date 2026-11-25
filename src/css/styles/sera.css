@@ -249,6 +249,21 @@
     @apply text-destructive bg-card [&>svg]:text-current after:bg-destructive;
   }
 
+  .alert[data-variant='info'] {
+    color: var(--color-info);
+    @apply bg-card [&>svg]:text-current after:bg-info;
+  }
+
+  .alert[data-variant='success'] {
+    color: var(--color-success);
+    @apply bg-card [&>svg]:text-current after:bg-success;
+  }
+
+  .alert[data-variant='warning'] {
+    color: var(--color-warning);
+    @apply bg-card [&>svg]:text-current after:bg-warning;
+  }
+
   .alert > :is(h2, h3, h4, h5, h6, strong, [data-title]),
   .alert[data-variant='destructive'] > :is(h2, h3, h4, h5, h6, strong, [data-title]) {
     @apply font-semibold text-sm;
